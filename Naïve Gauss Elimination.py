@@ -55,5 +55,5 @@ for i in range(n-1,-1,-1):
     mertixnow(a,b,x)
 print("Ans")
 for i in range(len(x)):
-    print("x"+str(i+1),"=",x[i])
+    print("x"+str(i+1),"= %.3f"%x[i])
 
