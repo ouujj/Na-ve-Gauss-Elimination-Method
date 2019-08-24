@@ -16,9 +16,9 @@ def mertixnow(a,b,x):
 	print()
 	for i in range(n):
 		if(x[i].isnumeric()):
-			print("%.3f"%a[i]," ","%.3f"%x[i]," ","%.3f"%b[i])
+			print(a[i]," ","%.3f"%x[i]," ","%.3f"%b[i])
 		else:
-			print("%.3f"%a[i]," ",x[i]," ","%.3f"%b[i])
+			print(a[i]," ",x[i]," ","%.3f"%b[i])
 	print()
     
 mertixnow(a,b,x)
