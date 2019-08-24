@@ -13,13 +13,21 @@ for i in range(n):
 #Show mattrix
 
 def mertixnow(a,b,x):
-	print()
-	for i in range(n):
-		if(x[i].isnumeric()):
-			print(a[i]," ","%.3f"%x[i]," ","%.3f"%b[i])
-		else:
-			print(a[i]," ",x[i]," ","%.3f"%b[i])
-	print()
+    print()
+    for i in range(n):
+        A=a[i]
+        B=b[i]
+        X=x[i]
+        
+        for ad in A:
+            print("%.3f"%ad,end = " ")
+
+         
+        if(not(isinstance(X, str))):
+            print(" ","%.3f"%float(X)," ","%.3f"%float(B))
+        else:
+            print(" ",X," ","%.3f"%float(B))
+    print()
     
 mertixnow(a,b,x)
 
@@ -59,4 +67,3 @@ for i in range(n-1,-1,-1):
 print("Ans")
 for i in range(len(x)):
     print("x"+str(i+1),"= %.3f"%x[i])
-
